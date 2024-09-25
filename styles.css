@@ -1,0 +1,190 @@
+/* Estilo general para el cuerpo de la página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Color de fondo más suave */
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra horizontal fija en la parte superior */
+.horizontal-bar {
+  background-color: #007bff; /* Color de fondo azul */
+  height: 100px; /* Altura de la barra */
+  width: 100%; /* Ancho de la barra que cubre toda la página */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* Hace que la barra se mantenga fija en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Se asegura de que esté por encima de otros elementos */
+  padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Logo de la barra superior */
+.covid-logo {
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 50%; /* Hacer el logo redondo */
+}
+
+/* Mensaje de actualización */
+.update-message {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-top: 120px; /* Margen superior para evitar la barra fija */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el título */
+h1 {
+  color: #0056b3;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Ajustes en el contenedor principal para las tarjetas */
+.covid-data {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las tarjetas se acomoden en varias filas */
+  justify-content: center; /* Centrar las tarjetas */
+  gap: 20px; /* Añadir espacio entre tarjetas */
+  margin-top: 30px; /* Separar las tarjetas del título */
+}
+
+/* Tarjetas de datos COVID */
+.covid-card {
+  background-color: #f0f8ff; /* Fondo azul claro */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más definida */
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+}
+
+/* Animación hover para las tarjetas */
+.covid-card:hover {
+  transform: translateY(-5px); /* Pequeño efecto de elevación */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+
+/* Responsivo: ajustar las tarjetas en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .covid-card {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .covid-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Estilos para los encabezados en las tarjetas */
+.covid-card h2 {
+  color: #0056b3;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+.covid-card p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Estilos para los enlaces */
+.covid-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.covid-card a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para hacer que los contenedores de lista de enlaces sean agradables */
+.covid-card ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.covid-card li {
+  margin-bottom: 5px;
+}
+
+/* Estilo para el enlace de regresar */
+.back-link {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del enlace */
+.state-link {
+  display: inline-block; /* Para darle apariencia de botón */
+  background-color: #007bff; /* Azul brillante */
+  color: #fff; /* Texto blanco */
+  padding: 15px 25px; /* Espaciado interno */
+  font-size: 1.2em; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto hover */
+.state-link:hover {
+  background-color: #0056b3; /* Cambiar a un azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para la página daily.html */
+h1 {
+  color: #0056b3;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#state-select {
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+  display: block; /* Asegúrate de que ocupe todo el ancho */
+}
+
+#data-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+

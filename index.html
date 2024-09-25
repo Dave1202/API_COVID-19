@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de COVID-19 en EE.UU.</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Cargar Axios desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- Barra superior con el logo -->
+    <div class="horizontal-bar">
+        <img src="/img/covid.png" alt="COVID Logo" class="covid-logo">
+    </div>
+
+    <!-- Mensaje de actualización -->
+    <div class="update-message">
+        Los datos están actualizados hasta el 7 de marzo de 2021.
+    </div>
+
+    <!-- Enlace a la página de datos por estado -->
+    <div class="link-container">
+        <a href="state.html" class="state-link">Ver Datos Por Estado</a>
+    </div>
+
+    <!-- Contenedor principal para los datos de COVID -->
+    <div class="container">
+        <div class="covid-content">
+            <h1>Fuentes de datos sobre COVID-19 en los Estados Unidos</h1>
+            <!-- Aquí se mostrarán los datos de COVID dinámicamente -->
+            <div class="covid-data" id="covid-data">
+                <!-- Las tarjetas de datos de COVID se insertarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar el archivo app.js que contiene la lógica de la API -->
+    <script src="app.js"></script>
+</body>
+</html>

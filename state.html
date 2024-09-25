@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="state-page">
+        <h1>COVID-19 Datos por Estado</h1>
+
+        <!-- Menú desplegable -->
+        <select id="state-select">
+            <option value="">Selecciona un Estado</option>
+        </select>
+
+        <!-- Contenedor para mostrar los datos del estado -->
+        <div id="data-container"></div>
+    </div>
+
+    <!-- Enlace a la página de datos por estado -->
+    <div class="link-container">
+        <a href="index.html" class="state-link">Ver Fuentes de Datos</a>
+    </div>
+    
+
+    <!-- Referencia al archivo JavaScript -->
+    <script src="state.js"></script>
+</body>
+</html>
